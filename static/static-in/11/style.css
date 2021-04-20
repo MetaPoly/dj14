@@ -1,0 +1,86 @@
+body{
+  background: linear-gradient(to bottom right, lemonchiffon, white);
+  padding: 15px;
+  font-family: Verdana;
+}
+
+h1{
+  background: teal;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.column1{
+  width: 48%;  
+  float: left;
+}
+
+.column2{
+  width: 48%;  
+  float: right;
+}
+
+img{
+  max-width: 70%;
+  
+}
+
+.photo{
+  transform: rotate(10deg);
+  padding: 0px 50px;
+}
+
+h2{
+  background: teal;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 4px 4px 4px gray;
+  margin: 0px 0px 20px 0px;
+}
+	
+.item{
+  padding: 10px;
+  border: 3px dashed teal;
+  margin-bottom: 10px;
+}
+
+#robot{
+	font-size: 40px;
+	text-shadow: 2px 2px grey;
+	color: white;
+  font-family: "Impact";
+  background: linear-gradient(green,yellow,red,blue);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#greenrobot{
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  animation: slide 10s infinite;
+}
+
+@keyframes slide{
+  0% {left: -200px;}
+  50% {left: 0px;}
+  100% {left: -200px;}
+  
+}
+
+#spacerobot{
+  height: 100px;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  animation: space 20s infinite;
+}
+
+@keyframes space{
+  0% {left: 0px;}
+  50% {left: 80%;}
+  100% {left: 0px;}
+  
+}

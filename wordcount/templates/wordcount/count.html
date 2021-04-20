@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <title>Evans portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'jobs' %}">Evan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="https://github.com/MetaPoly" target="_blank">Github</a>
+                    <a class="nav-link" href="{% static 'sales_representative.png' %}">Resume</a>
+                    <a class="nav-link" href="{% static 'index.html' %}">Show case</a>
+                    <a class="nav-link" href="{% url 'count' %}">Word count</a>
+                    <a class="nav-link" href="{% url 'blog' %}">blog</a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="">
+                <h1>Word Count: {{ len }} words</h1>
+
+                <a href="{% url 'help' %}">help page</a>
+
+                <h2>your word(s): {{ word }}</h2>
+
+                <form action="{% url 'word' %}">
+                    <textarea cols="100" rows="10" name="fulltext"></textarea>
+                    <br>
+                    <input type="submit" value="count!"/>
+                </form>
+
+                {% for word, lol in worddict %}
+                <h2>{{ word }} - {{ lol }}</h2>
+                <br>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">Copy Right &copy; Evan {% now 'M Y' %}</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>

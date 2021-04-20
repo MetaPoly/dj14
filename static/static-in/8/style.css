@@ -1,0 +1,107 @@
+body {
+   background: white;
+}
+
+.sticker {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin: 5px;
+}
+
+#coding{
+	font-size: 40px;
+	font-weight: bold;
+  font-family: "Courier New";
+  background: linear-gradient(red,magenta);
+  padding: 50px 20px;
+  border-radius: 20px;
+}
+
+#web{
+	font-size: 40px;
+	text-shadow: 2px 2px grey;
+  font-family: "Impact";
+  background: radial-gradient(yellow,orange,red);
+  padding: 30px;
+  border-radius: 100px;
+}
+
+#robot{
+	font-size: 40px;
+	text-shadow: 2px 2px grey;
+	color: white;
+  font-family: "Impact";
+  background: linear-gradient(green,yellow,red,blue);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#firerobot{
+  background: linear-gradient(to bottom left, white,yellow,tomato);
+  border: 10px dashed tomato;
+  outline: 4px solid tomato;
+  outline-offset: 2px; 
+}
+
+#firetext{
+	font-size: 30px;
+  font-family: "Impact";
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  color: red;
+  transform: rotate(-15deg);
+}
+
+#bluerobot{
+  background: linear-gradient(to right, white,lightblue);
+  border: 10px dashed blue;
+  outline: 4px solid blue;
+  outline-offset: 2px; 
+}
+
+#bluetext{
+	font-size: 30px;
+  font-family: "Impact";
+  position: absolute;
+  top: 100px;
+  left: 180px;
+  color: blue;
+  transform: rotate(15deg);
+}
+
+#greenrobot{
+  background: linear-gradient(to right, white,lightgreen);
+  border: 10px dashed green;
+  outline: 4px solid green;
+  outline-offset: 2px; 
+}
+
+#greentext{
+	font-size: 30px;
+  font-family: "Impact";
+  position: absolute;
+  top: 100px;
+  left: 380px;
+  color: green;
+  transform: rotate(-15deg);
+}
+
+#purplerobot{
+  background: linear-gradient(to right, white,grey);
+  border: 10px dashed purple;
+  outline: 4px solid purple;
+  outline-offset: 2px; 
+}
+
+#purpletext{
+	font-size: 30px;
+  font-family: "Impact";
+  position: absolute;
+  top: 100px;
+  left: 580px;
+  color: purple;
+  transform: rotate(-15deg);
+}
+

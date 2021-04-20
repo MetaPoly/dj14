@@ -1,0 +1,324 @@
+<html>
+  
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            width:100%;
+            height: 100%;
+		}
+
+
+		.lecutre-container {
+			height: 80vh;
+			margin-left: 1%;
+            padding-left: 0px;
+            padding-right: 1%;
+			width: 83%;
+            overflow: scroll;
+		}
+		.lecutre-container::-webkit-scrollbar {
+			width: 15px;
+			height: 15px;
+			border-radius: 5px;
+			background: lightgrey;
+		}
+		.lecutre-container::-webkit-scrollbar-track {
+			box-shadow: inset 0 0 5px rgb(255, 203, 124); 
+		}
+		.lecutre-container::-webkit-scrollbar-thumb {
+			border-radius: 5px;
+			background: gray;
+		}
+		.lecutre-container::-webkit-scrollbar-thumb:hover {
+			background: darkgray; 
+		}
+		.lecutre-container::-webkit-scrollbar-thumb:active { 
+			background-color: darkblue;
+		} 
+		/* Buttons */
+		.lecutre-container::-webkit-scrollbar-button{
+			border-style: solid;
+			height: 16px;
+			width: 16px;
+		}
+		/* Up */
+		.lecutre-container::-webkit-scrollbar-button:single-button:vertical:decrement {
+			border-width: 0 8px 8px 8px;
+			border-color: transparent transparent #555555 transparent;
+		}
+		.lecutre-container::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+			border-color: white white rgb(128, 95, 245) white;
+		}
+		.lecutre-container::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+			border-color: gray gray rgb(255, 203, 124) gray;
+		}
+		/* Down */
+		.lecutre-container::-webkit-scrollbar-button:single-button:vertical:increment {
+			border-width: 8px 8px 0 8px;
+			border-color: #555555 transparent transparent transparent;
+		}
+		.lecutre-container::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+			border-color: rgb(128, 95, 245) white white white;
+		}
+		.lecutre-container::-webkit-scrollbar-button:single-button:vertical:increment:active {
+			border-color: rgb(255, 203, 124) gray gray gray;
+		}
+
+
+		/* Left */
+		.lecutre-container::-webkit-scrollbar-button:single-button:horizontal:decrement {
+			border-width: 8px 8px 8px 0 ;
+			border-color: transparent #555555 transparent transparent;
+		}
+		.lecutre-container::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+			border-color: white rgb(128, 95, 245) white white;
+		}
+		.lecutre-container::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
+			border-color: gray rgb(255, 203, 124) gray gray;
+		}
+		/* Right */
+		.lecutre-container::-webkit-scrollbar-button:single-button:horizontal:increment {
+			border-width: 8px 0 8px 8px;
+			border-color:transparent transparent transparent #555555 ;
+		}
+		.lecutre-container::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
+			border-color: white white white rgb(128, 95, 245);
+		}
+		.lecutre-container::-webkit-scrollbar-button:single-button:horizontal:increment:active {
+			border-color: gray gray gray rgb(255, 203, 124);
+		}
+
+
+        .header {
+            background-color:#0c1f27;
+            color:#20b2aa;
+            text-align:center;
+            padding:5px;
+        }
+        
+        .nav {
+            line-height:30px;
+            background-color:#e0f2f0;
+			display: block;
+			width: 15%;
+            padding:0px;
+            position: absolute;
+            right: 0;
+            top:0;
+            bottom: 0;
+			display: block;
+			overflow: auto;
+        }
+
+        .footer {
+	        color:#20b2aa;
+            clear:both;
+            text-align:center;
+            padding:10px;
+        }
+
+
+        .article {
+            display: flex;
+            position: relative;
+
+		}
+
+        .project {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .catlog{
+            font-size:20px;
+            color:black;
+            font-family: sans-serif;
+        }
+
+        .title {
+            color:#20b2aa;
+            font-size:20px;
+        }
+
+        .type {
+            color:darkblue;
+            font-size:20px;
+        }
+
+        .img {
+            width: 185px;
+            height: 266px;
+        }
+    </style>
+
+  </head>
+  
+  <body>
+    
+	<div class="header">
+		<h1>Project Showcase</h1>
+    </div>
+
+	<div class="article">
+
+		<div class="lecutre-container" >
+			<div class="project">
+				<h2 id='Birthday' class="title">Happy Birthday</h2>
+				<div class="type">HTML code	</div>
+				<div class="info">
+					<p>The Happy Birthday project web page demo create using embed link from <a href="https://trinket.io/embed/html/d1cc030901?toggleCode=true" target="_blank">trinket.io</a>.</p>
+				</div>
+				<iframe src="https://trinket.io/embed/html/d1cc030901?toggleCode=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+				</iframe>
+				<a href="#top">top</a>    
+			</div>
+			
+			<div class="project">
+				<h2 id='Station' class="title">Space Station</h2>
+				<div class="type">Python code</div>
+				<div class="info">
+					<p>The Space Station project is python code demo using embed link from <a href="https://trinket.io/embed/python/999f876c24?toggleCode=true&start=result" target="_blank">trinket.io</a></p>
+				</div>
+				<iframe src="https://trinket.io/embed/python/999f876c24?toggleCode=true&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+				</iframe>
+				<a href="#top">top</a>    
+			</div>
+			
+			<div class="project">
+				<h2 id='Music' class="title">Youtube Music</h2>
+				<div class="type">Youtube embed</div>
+				<div class="info">
+					<p>The Youtube embed project is demo using embed link from <a href="https://youtu.be/XAi3VTSdTxU" target="_blank">Youtube</a></p>
+				</div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/XAi3VTSdTxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+				<a href="#top">top</a>    
+			</div>
+			
+			<div class="project">
+				<h2 id='Story' class="title">Bubble</h2>
+				<div class="type">Game embed</div>
+				<div class="info">
+					<p>The Bubble Game embed project is demo using embed link from game website <a href="http://www.4j.com" target="_blank">4j.com</a></p>
+				</div>
+				
+				<iframe width="1024" height="800" src="http://www.4j.com/embed/Bubble-Spirit"></iframe>
+				
+				<a href="#top">top</a>    
+			</div>
+			
+			<div class="project">
+				<h2 id='Solitaire' class="title">Solitaire</h2>
+				<div class="type">Game embed</div>
+				<div class="info">
+					<p>The Solitaire Game embed project is demo using embed link from game website 
+						<a href="https://wordgames.com" target="_blank">wordgames.com</a><br/></p>
+				</div>
+				
+				<iframe src="https://games.coolgames.com/classic-solitaire/en/1.2.2/index.html" width="100%" height="550"></iframe>
+				
+				<a href="#top">top</a>    
+			</div>
+			
+			<div class="project">
+				<h2 id='Roller' class="title">Roller</h2>
+				<div class="type">Game embed</div>
+				<div class="info">
+					<p>The Roller Game embed project is demo using embed link from game website 
+						<a href="http://www.cargames.com" target="_blank">cargames.com</a><br/></p>
+				</div>
+				<iframe width="100%" height="800" src="https://www.bestgames.com/games/Roller-Splat/index.html"></iframe>
+				<a href="#top">top</a>    
+			</div>
+			
+			
+			<div class="project">
+				<h2 id='Zombies' class="title">Plants vs Zombies</h2>
+				<div class="type">Game embed</div>
+				<div class="info">
+					<p>The Plants vs Zombies Game need enable flash in order to play. This embed project is demo using embed link from game website
+						<a href="https://www.freegames66.com" target="_blank">freegames66.com</a><br/></p>
+				</div>
+				<iframe id="iframe-in-game" class="direct-field" src="https://www.freegames66.com/iframe-flash/plants-vs-zombies" width="100%" height="635" allowfullscreen></iframe>
+				<a href="#top">top</a>    
+			</div>
+			
+			
+		
+			<div class="project">
+				<h2 id='Letter' class="title">Cut the rope</h2>
+				<div class="type">Game embed</div>
+				<div class="info">
+					<p>The Cut the rope Game embed project is demo using embed link from game website 
+						<a href="https://fungames24.net" target="_blank">FunGames24</a><br/></p>
+				</div>
+				<iframe id="playframe" width="1024" height="576" src="https://games.gamepix.com/play/40072" frameborder="0" scrolling="no"></iframe>
+				<a href="#top">top</a>    
+			</div>
+			
+			<div class="project">
+				<h2 id='Happy-Glass' class="title">Happy Glass</h2>
+				<div class="type">Game embed</div>
+				<div class="info">
+					<p>The Happy Glass Game embed project is demo using embed link from game website 
+						<a href="https://www.bored.com" target="_blank">bored.com</a><br/></p>
+				</div>
+				<iframe id="playframe" width="100%" height="800" src="http://www.4j.com/embed/Happy-Glass-Online-2" frameborder="0" scrolling="no"></iframe>
+				<a href="#top">top</a>    
+			</div>
+			
+			<div class="project">
+				<h2 id='Pacman' class="title">Pacman</h2>
+				<div class="type">Game embed</div>
+				<div class="info">
+					<p>The Pacman Game embed project is demo using embed link from game website 
+						<a href="https://www.htmlgames.com" target="_blank">htmlgames.com</a><br/></p>
+				</div>
+				<iframe frameborder="0" src="https://cdn.htmlgames.com/ClassicPac/index.html" style="width:1024;height:800"></iframe>
+				<a href="#top">top</a>    
+			</div>
+			
+			<div class="project">
+				<h2 id='Piffle' class="title">Piffle</h2>
+				<div class="type">Game embed</div>
+				<div class="info">
+					<p>The Piffle Game embed project is demo using embed link from game website 
+						<a href="http://www.playjolt.com" target="_blank">playjolt.com</a><br/></p>
+				</div>
+				<iframe frameborder="0" src="https://html5.gamedistribution.com/ad944c1c619a4a04a3ff39327cf067d7/" style="width:1024;height:800"></iframe>
+				<a href="#top">top</a>    
+			</div>
+
+		</div>
+   
+		<div class="nav">
+			<ol class="catlog">
+			  <li><a href="#Birthday">Happy Birthday</a></li>
+			  <li><a href="#Station">Space Station</a></li>
+			  <li><a href="#Music">Youtube Music</a></li>
+			  <li><a href="#Story">Bubble</a></li>
+			  <li><a href="#Solitaire">Solitaire</a></li>
+			  <li><a href="#Roller">Roller</a></li>
+			  <li><a href="#Zombies">Plants vs Zombies</a></li>
+			  <li><a href="#Letter">Cut the rope</a></li>
+			  <li><a href="#Happy-Glass">Happy Glass</a></li>
+			  <li><a href="#Pacman">Pacman</a></li>
+			  <li><a href="#Piffle">Piffle</a></li>
+	
+			</ol>
+		</div>
+		
+	</div>
+
+
+	<div class="footer">Copyright © Lemonthy
+	</div>	
+  </body>
+  
+</html>

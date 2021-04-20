@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+#sky {  
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: lightblue;
+  animation: sky 10s infinite;  
+}
+@keyframes sky {
+    0% {background: black;}
+    30% {background: lightblue;}
+    60% {background: lightblue;}
+    100% {background: black;}
+}
+
+#sun {  
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  animation: sunrise 10s infinite;
+}
+
+#rainbow {  
+  height: 100px;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  animation: fade 10s infinite;
+}
+
+#cloud {  
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  animation: leftright 10s infinite;
+}
+
+#helicopter {  
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 0%;
+  animation: rightleft 10s infinite;
+}
+
+#sea {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  background: blue;
+}
+
+#boot {  
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 0%;
+  animation: leftright 10s infinite;
+}
+
+
+@keyframes sunrise{
+  0% {top: 90%; left:0 ;}
+  33% {top: 0%; left:30% ;}
+  66% {top: 0%; left:60% ;}
+  100% {top: 90%; left:90% ;}
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  30% {opacity: 100;}
+  60% {opacity: 10;}
+  100% {opacity: 0;}
+}
+
+@keyframes leftright {
+  0% {left:0% ;}
+  100% {left:100% ;}
+}
+
+@keyframes rightleft {
+  0% {left: 100% ;}
+  100% {left:-30% ;}
+}

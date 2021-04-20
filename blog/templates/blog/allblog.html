@@ -1,0 +1,62 @@
+Hi my blog:
+<p></p>
+
+
+<p></p>
+
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>Evans portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'jobs' %}">Evan Tan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="https://github.com/MetaPoly" target="_blank">Github</a>
+                    <br/>
+                    <a class="nav-link" href="{% static 'index.html' %}">Show case</a>
+                    <a class="nav-link" href="{% url 'count' %}">Word count</a>
+                    <a class="nav-link" href="#">Resume</a>
+                    <a class="nav-link active" href="{% url 'blog' %}">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+    <h1 class="text-centre p-5">Hi, my blogs:
+    </h1>
+        <h2> latest post</h2>
+        {% for Blog in Blog %}
+        <a href=""><h2>{{ blog.title }}</h2></div></a>
+        {{ blog.pub_date_pretty }}
+        <br>
+        <img scr="{{ blog.image.url }}">
+        <br>
+        <p>
+            {{ blog.body }}
+        </p>
+        {% endfor %}
+
+
+        </div>
+</main>
+
+</body>
+</html>

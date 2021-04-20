@@ -1,0 +1,38 @@
+div {
+  text-align: center;
+  overflow: hidden;
+  border: 4px dotted red;
+  width: 300px;
+  background : yellow;
+  border-radius: 40px;
+}
+
+img {
+  width: 100px;
+  border: 1px solid black;  
+  padding: 10px;
+  background : white;
+  
+}
+
+h1 {
+  font-family: Impact;
+  font-size: 50pt;
+  margin: 10px;
+  text-decoration: underline overline ;
+}
+
+
+h3 {
+  font-family: Impact;
+  font-size: 20pt;
+  margin: 10px;
+}
+
+
+p {
+  font-family: Arial ;
+  font-size: 12pt;
+  margin: 10px;  
+}
+

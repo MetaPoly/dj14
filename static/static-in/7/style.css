@@ -1,0 +1,147 @@
+img {
+  width: 50px;
+}
+#face {
+  width: 400px;
+}
+
+#eyes1 {
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+#mouth1 {
+    width: 100px;
+    position: absolute;
+    top: 350px;
+    left: 150px;
+}
+#nose1 {
+    width: 50px;
+    position: absolute;
+    top: 270px;
+    left: 170px;
+}
+#ears1 {
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+#hair1 {
+    width: 330px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+}
+#bird {
+    width: 80px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+#bowtie {
+    width: 100px;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+}
+
+#face2 {
+  width: 400px;
+  position: absolute;
+  top: 0px;
+  left: 400px;
+}
+  
+#eyes2 {
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left: 500px;
+}
+#mouth2 {
+    width: 100px;
+    position: absolute;
+    top: 330px;
+    left: 550px;
+}
+#nose2 {
+    width: 50px;
+    position: absolute;
+    top: 270px;
+    left: 570px;
+}
+#ears2 {
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+#hair2 {
+    width: 330px;
+    position: absolute;
+    top: 70px;
+    left: 430px;
+}
+#crown {
+    width: 100px;
+    position: absolute;
+    top: 40px;
+    left: 550px;
+}
+
+#face3 {
+  width: 400px;
+  position: absolute;
+  top: 500px;
+  left: 10px;
+  
+}
+  
+#eyes3 {
+  width: 200px;
+  position: absolute;
+  top: 650px;
+  left: 100px;
+}
+#mouth3 {
+    width: 100px;
+    position: absolute;
+    top: 800px;
+    left: 150px;
+}
+#nose3 {
+    width: 50px;
+    position: absolute;
+    top: 720px;
+    left: 170px;
+}
+
+#headphones {
+    width: 400px;
+    position: absolute;
+    top: 480px;
+    left: 10px;
+}
+#hair3 {
+    width: 330px;
+    position: absolute;
+    top: 500px;
+    left: 40px;
+}
+#antenna {
+    width: 80px;
+    position: absolute;
+    top: 480px;
+    left: 120px;
+}
+#necklace {
+    width: 100px;
+    position: absolute;
+    top: 900px;
+    left: 150px;
+}
+
+
